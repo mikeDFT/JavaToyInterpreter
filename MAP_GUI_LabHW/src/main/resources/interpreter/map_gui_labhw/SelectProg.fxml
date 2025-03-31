@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="341.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interpreter.map_gui_labhw.SelectProgWindowController">
+   <children>
+      <Button layoutX="52.0" layoutY="303.0" mnemonicParsing="false" onAction="#runSelectedProgram" prefHeight="25.0" prefWidth="249.0" text="Run selected program">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <ListView fx:id="listView" layoutX="15.0" layoutY="39.0" prefHeight="238.0" prefWidth="312.0" />
+      <Label fx:id="errorText" alignment="CENTER" layoutX="21.0" layoutY="286.0" prefHeight="17.0" prefWidth="312.0" textFill="#ff0606" />
+      <Label alignment="CENTER" layoutX="55.0" layoutY="7.0" prefHeight="17.0" prefWidth="242.0" text="Programs:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

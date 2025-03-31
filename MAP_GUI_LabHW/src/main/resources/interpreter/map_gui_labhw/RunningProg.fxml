@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interpreter.map_gui_labhw.RunningProgWindowController">
+   <children>
+      <Pane layoutX="250.0" layoutY="296.0" prefHeight="40.0" prefWidth="343.0">
+         <children>
+            <Button layoutX="14.0" layoutY="8.0" mnemonicParsing="false" onAction="#runOneStep" text="Run one step" />
+            <Button layoutX="246.0" layoutY="8.0" mnemonicParsing="false" onAction="#runAllSteps" text="Run all steps" />
+         </children>
+      </Pane>
+      <Label fx:id="prgStatesCountLabel" layoutX="23.0" layoutY="14.0" prefHeight="27.0" prefWidth="115.0" text="? PrgStates">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="prgStatesListView" layoutX="23.0" layoutY="41.0" onMouseClicked="#showSelectedProgram" prefHeight="230.0" prefWidth="99.0" />
+      <TableView fx:id="heapTableView" layoutX="138.0" layoutY="41.0" prefHeight="230.0" prefWidth="115.0">
+        <columns>
+          <TableColumn fx:id="addressColumn" prefWidth="54.0" text="Address" />
+          <TableColumn fx:id="valueColumn" prefWidth="64.0" text="Value" />
+        </columns>
+      </TableView>
+      <ListView fx:id="outListView" layoutX="272.0" layoutY="41.0" prefHeight="230.0" prefWidth="86.0" />
+      <Label layoutX="138.0" layoutY="14.0" prefHeight="27.0" prefWidth="115.0" text="HeapTable">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="272.0" layoutY="14.0" prefHeight="27.0" prefWidth="115.0" text="Out">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="fileTableListView" layoutX="378.0" layoutY="41.0" prefHeight="230.0" prefWidth="86.0" />
+      <TableView fx:id="symbolTableListView" layoutX="479.0" layoutY="41.0" prefHeight="230.0" prefWidth="115.0">
+         <columns>
+            <TableColumn fx:id="variableColumn" prefWidth="56.0" text="Var" />
+            <TableColumn fx:id="valueColumn2" prefWidth="62.0" text="Value" />
+         </columns>
+      </TableView>
+      <ListView fx:id="exeStackListView" layoutX="610.0" layoutY="41.0" prefHeight="230.0" prefWidth="137.0" />
+      <Label layoutX="378.0" layoutY="14.0" prefHeight="27.0" prefWidth="115.0" text="FileTable">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="479.0" layoutY="14.0" prefHeight="27.0" prefWidth="115.0" text="SymbolTable">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="610.0" layoutY="14.0" prefHeight="27.0" prefWidth="115.0" text="ExeStack">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

@@ -1,0 +1,147 @@
+--[[ ProgramState ID: 3 ]]--
+ExeStack:
+bool T
+(bool F;
+(T = true;
+(F = false and T;
+print(T or F);););)
+
+SymbolTable:
+
+Output:
+
+FileTable:
+
+HeapTable:
+
+
+--[[ ProgramState ID: 3 ]]--
+ExeStack:
+(bool F;
+(T = true;
+(F = false and T;
+print(T or F);););)
+
+SymbolTable:
+bool T = false
+
+Output:
+
+FileTable:
+
+HeapTable:
+
+
+--[[ ProgramState ID: 3 ]]--
+ExeStack:
+bool F
+(T = true;
+(F = false and T;
+print(T or F););)
+
+SymbolTable:
+bool T = false
+
+Output:
+
+FileTable:
+
+HeapTable:
+
+
+--[[ ProgramState ID: 3 ]]--
+ExeStack:
+(T = true;
+(F = false and T;
+print(T or F););)
+
+SymbolTable:
+bool T = false
+bool F = false
+
+Output:
+
+FileTable:
+
+HeapTable:
+
+
+--[[ ProgramState ID: 3 ]]--
+ExeStack:
+T = true
+(F = false and T;
+print(T or F);)
+
+SymbolTable:
+bool T = false
+bool F = false
+
+Output:
+
+FileTable:
+
+HeapTable:
+
+
+--[[ ProgramState ID: 3 ]]--
+ExeStack:
+(F = false and T;
+print(T or F);)
+
+SymbolTable:
+bool T = true
+bool F = false
+
+Output:
+
+FileTable:
+
+HeapTable:
+
+
+--[[ ProgramState ID: 3 ]]--
+ExeStack:
+F = false and T
+print(T or F)
+
+SymbolTable:
+bool T = true
+bool F = false
+
+Output:
+
+FileTable:
+
+HeapTable:
+
+
+--[[ ProgramState ID: 3 ]]--
+ExeStack:
+print(T or F)
+
+SymbolTable:
+bool T = true
+bool F = false
+
+Output:
+
+FileTable:
+
+HeapTable:
+
+
+--[[ ProgramState ID: 3 ]]--
+ExeStack:
+
+SymbolTable:
+bool T = true
+bool F = false
+
+Output:
+true
+
+FileTable:
+
+HeapTable:
+
+

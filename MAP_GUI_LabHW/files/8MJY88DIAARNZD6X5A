@@ -1,0 +1,1765 @@
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+int v
+(ref(int) b;
+(new(b, 1);
+(fork((ref(int) a;
+(print(rH(b));
+(new(a, 30);
+print(rH(a));););));
+(fork((ref(int) a;
+(wH(b, 100);
+(new(a, 40);
+print(rH(a));););));
+(ref(int) a;
+(new(a, 50);
+(wH(b, 60);
+print(rH(a));););););););)
+
+SymbolTable:
+
+Output:
+
+FileTable:
+
+HeapTable:
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+(ref(int) b;
+(new(b, 1);
+(fork((ref(int) a;
+(print(rH(b));
+(new(a, 30);
+print(rH(a));););));
+(fork((ref(int) a;
+(wH(b, 100);
+(new(a, 40);
+print(rH(a));););));
+(ref(int) a;
+(new(a, 50);
+(wH(b, 60);
+print(rH(a));););););););)
+
+SymbolTable:
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+ref(int) b
+(new(b, 1);
+(fork((ref(int) a;
+(print(rH(b));
+(new(a, 30);
+print(rH(a));););));
+(fork((ref(int) a;
+(wH(b, 100);
+(new(a, 40);
+print(rH(a));););));
+(ref(int) a;
+(new(a, 50);
+(wH(b, 60);
+print(rH(a)););););););)
+
+SymbolTable:
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+(new(b, 1);
+(fork((ref(int) a;
+(print(rH(b));
+(new(a, 30);
+print(rH(a));););));
+(fork((ref(int) a;
+(wH(b, 100);
+(new(a, 40);
+print(rH(a));););));
+(ref(int) a;
+(new(a, 50);
+(wH(b, 60);
+print(rH(a)););););););)
+
+SymbolTable:
+ref(int) b = (0, int)
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+new(b, 1)
+(fork((ref(int) a;
+(print(rH(b));
+(new(a, 30);
+print(rH(a));););));
+(fork((ref(int) a;
+(wH(b, 100);
+(new(a, 40);
+print(rH(a));););));
+(ref(int) a;
+(new(a, 50);
+(wH(b, 60);
+print(rH(a));););););)
+
+SymbolTable:
+ref(int) b = (0, int)
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+(fork((ref(int) a;
+(print(rH(b));
+(new(a, 30);
+print(rH(a));););));
+(fork((ref(int) a;
+(wH(b, 100);
+(new(a, 40);
+print(rH(a));););));
+(ref(int) a;
+(new(a, 50);
+(wH(b, 60);
+print(rH(a));););););)
+
+SymbolTable:
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+fork((ref(int) a;
+(print(rH(b));
+(new(a, 30);
+print(rH(a));););))
+(fork((ref(int) a;
+(wH(b, 100);
+(new(a, 40);
+print(rH(a));););));
+(ref(int) a;
+(new(a, 50);
+(wH(b, 60);
+print(rH(a)););););)
+
+SymbolTable:
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+(fork((ref(int) a;
+(wH(b, 100);
+(new(a, 40);
+print(rH(a));););));
+(ref(int) a;
+(new(a, 50);
+(wH(b, 60);
+print(rH(a)););););)
+
+SymbolTable:
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 15 ]]--
+ExeStack:
+(ref(int) a;
+(print(rH(b));
+(new(a, 30);
+print(rH(a));););)
+
+SymbolTable:
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+fork((ref(int) a;
+(wH(b, 100);
+(new(a, 40);
+print(rH(a));););))
+(ref(int) a;
+(new(a, 50);
+(wH(b, 60);
+print(rH(a));););)
+
+SymbolTable:
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 15 ]]--
+ExeStack:
+ref(int) a
+(print(rH(b));
+(new(a, 30);
+print(rH(a)););)
+
+SymbolTable:
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+(ref(int) a;
+(new(a, 50);
+(wH(b, 60);
+print(rH(a));););)
+
+SymbolTable:
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 15 ]]--
+ExeStack:
+(print(rH(b));
+(new(a, 30);
+print(rH(a)););)
+
+SymbolTable:
+ref(int) a = (0, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 16 ]]--
+ExeStack:
+(ref(int) a;
+(wH(b, 100);
+(new(a, 40);
+print(rH(a));););)
+
+SymbolTable:
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+ref(int) a
+(new(a, 50);
+(wH(b, 60);
+print(rH(a)););)
+
+SymbolTable:
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 15 ]]--
+ExeStack:
+print(rH(b))
+(new(a, 30);
+print(rH(a));)
+
+SymbolTable:
+ref(int) a = (0, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 16 ]]--
+ExeStack:
+ref(int) a
+(wH(b, 100);
+(new(a, 40);
+print(rH(a)););)
+
+SymbolTable:
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+(new(a, 50);
+(wH(b, 60);
+print(rH(a)););)
+
+SymbolTable:
+ref(int) a = (0, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 15 ]]--
+ExeStack:
+(new(a, 30);
+print(rH(a));)
+
+SymbolTable:
+ref(int) a = (0, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 16 ]]--
+ExeStack:
+(wH(b, 100);
+(new(a, 40);
+print(rH(a)););)
+
+SymbolTable:
+ref(int) a = (0, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+new(a, 50)
+(wH(b, 60);
+print(rH(a));)
+
+SymbolTable:
+ref(int) a = (0, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 15 ]]--
+ExeStack:
+new(a, 30)
+print(rH(a))
+
+SymbolTable:
+ref(int) a = (0, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 16 ]]--
+ExeStack:
+wH(b, 100)
+(new(a, 40);
+print(rH(a));)
+
+SymbolTable:
+ref(int) a = (0, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+(wH(b, 60);
+print(rH(a));)
+
+SymbolTable:
+ref(int) a = (2, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+
+FileTable:
+
+HeapTable:
+1 100
+2 50
+3 30
+
+
+--[[ ProgramState ID: 15 ]]--
+ExeStack:
+print(rH(a))
+
+SymbolTable:
+ref(int) a = (3, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+
+FileTable:
+
+HeapTable:
+1 100
+2 50
+3 30
+
+
+--[[ ProgramState ID: 16 ]]--
+ExeStack:
+(new(a, 40);
+print(rH(a));)
+
+SymbolTable:
+ref(int) a = (0, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+
+FileTable:
+
+HeapTable:
+1 100
+2 50
+3 30
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+wH(b, 60)
+print(rH(a))
+
+SymbolTable:
+ref(int) a = (2, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+30
+
+FileTable:
+
+HeapTable:
+1 100
+2 50
+3 30
+
+
+--[[ ProgramState ID: 15 ]]--
+ExeStack:
+
+SymbolTable:
+ref(int) a = (3, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+30
+
+FileTable:
+
+HeapTable:
+1 100
+2 50
+3 30
+
+
+--[[ ProgramState ID: 16 ]]--
+ExeStack:
+new(a, 40)
+print(rH(a))
+
+SymbolTable:
+ref(int) a = (0, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+30
+
+FileTable:
+
+HeapTable:
+1 100
+2 50
+3 30
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+print(rH(a))
+
+SymbolTable:
+ref(int) a = (2, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+30
+
+FileTable:
+
+HeapTable:
+1 60
+2 50
+4 40
+
+
+--[[ ProgramState ID: 16 ]]--
+ExeStack:
+print(rH(a))
+
+SymbolTable:
+ref(int) a = (4, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+30
+
+FileTable:
+
+HeapTable:
+1 60
+2 50
+4 40
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+
+SymbolTable:
+ref(int) a = (2, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+30
+50
+40
+
+FileTable:
+
+HeapTable:
+1 60
+2 50
+4 40
+
+
+--[[ ProgramState ID: 16 ]]--
+ExeStack:
+
+SymbolTable:
+ref(int) a = (4, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+30
+50
+40
+
+FileTable:
+
+HeapTable:
+1 60
+2 50
+4 40
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+int v
+(ref(int) b;
+(new(b, 1);
+(fork((ref(int) a;
+(print(rH(b));
+(new(a, 30);
+print(rH(a));););));
+(fork((ref(int) a;
+(wH(b, 100);
+(new(a, 40);
+print(rH(a));););));
+(ref(int) a;
+(new(a, 50);
+(wH(b, 60);
+print(rH(a));););););););)
+
+SymbolTable:
+
+Output:
+
+FileTable:
+
+HeapTable:
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+(ref(int) b;
+(new(b, 1);
+(fork((ref(int) a;
+(print(rH(b));
+(new(a, 30);
+print(rH(a));););));
+(fork((ref(int) a;
+(wH(b, 100);
+(new(a, 40);
+print(rH(a));););));
+(ref(int) a;
+(new(a, 50);
+(wH(b, 60);
+print(rH(a));););););););)
+
+SymbolTable:
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+ref(int) b
+(new(b, 1);
+(fork((ref(int) a;
+(print(rH(b));
+(new(a, 30);
+print(rH(a));););));
+(fork((ref(int) a;
+(wH(b, 100);
+(new(a, 40);
+print(rH(a));););));
+(ref(int) a;
+(new(a, 50);
+(wH(b, 60);
+print(rH(a)););););););)
+
+SymbolTable:
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+(new(b, 1);
+(fork((ref(int) a;
+(print(rH(b));
+(new(a, 30);
+print(rH(a));););));
+(fork((ref(int) a;
+(wH(b, 100);
+(new(a, 40);
+print(rH(a));););));
+(ref(int) a;
+(new(a, 50);
+(wH(b, 60);
+print(rH(a)););););););)
+
+SymbolTable:
+ref(int) b = (0, int)
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+new(b, 1)
+(fork((ref(int) a;
+(print(rH(b));
+(new(a, 30);
+print(rH(a));););));
+(fork((ref(int) a;
+(wH(b, 100);
+(new(a, 40);
+print(rH(a));););));
+(ref(int) a;
+(new(a, 50);
+(wH(b, 60);
+print(rH(a));););););)
+
+SymbolTable:
+ref(int) b = (0, int)
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+(fork((ref(int) a;
+(print(rH(b));
+(new(a, 30);
+print(rH(a));););));
+(fork((ref(int) a;
+(wH(b, 100);
+(new(a, 40);
+print(rH(a));););));
+(ref(int) a;
+(new(a, 50);
+(wH(b, 60);
+print(rH(a));););););)
+
+SymbolTable:
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+fork((ref(int) a;
+(print(rH(b));
+(new(a, 30);
+print(rH(a));););))
+(fork((ref(int) a;
+(wH(b, 100);
+(new(a, 40);
+print(rH(a));););));
+(ref(int) a;
+(new(a, 50);
+(wH(b, 60);
+print(rH(a)););););)
+
+SymbolTable:
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+(fork((ref(int) a;
+(wH(b, 100);
+(new(a, 40);
+print(rH(a));););));
+(ref(int) a;
+(new(a, 50);
+(wH(b, 60);
+print(rH(a)););););)
+
+SymbolTable:
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 17 ]]--
+ExeStack:
+(ref(int) a;
+(print(rH(b));
+(new(a, 30);
+print(rH(a));););)
+
+SymbolTable:
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+fork((ref(int) a;
+(wH(b, 100);
+(new(a, 40);
+print(rH(a));););))
+(ref(int) a;
+(new(a, 50);
+(wH(b, 60);
+print(rH(a));););)
+
+SymbolTable:
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 17 ]]--
+ExeStack:
+ref(int) a
+(print(rH(b));
+(new(a, 30);
+print(rH(a)););)
+
+SymbolTable:
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+(ref(int) a;
+(new(a, 50);
+(wH(b, 60);
+print(rH(a));););)
+
+SymbolTable:
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 17 ]]--
+ExeStack:
+(print(rH(b));
+(new(a, 30);
+print(rH(a)););)
+
+SymbolTable:
+ref(int) a = (0, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 18 ]]--
+ExeStack:
+(ref(int) a;
+(wH(b, 100);
+(new(a, 40);
+print(rH(a));););)
+
+SymbolTable:
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+ref(int) a
+(new(a, 50);
+(wH(b, 60);
+print(rH(a)););)
+
+SymbolTable:
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 17 ]]--
+ExeStack:
+print(rH(b))
+(new(a, 30);
+print(rH(a));)
+
+SymbolTable:
+ref(int) a = (0, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 18 ]]--
+ExeStack:
+ref(int) a
+(wH(b, 100);
+(new(a, 40);
+print(rH(a)););)
+
+SymbolTable:
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+(new(a, 50);
+(wH(b, 60);
+print(rH(a)););)
+
+SymbolTable:
+ref(int) a = (0, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 17 ]]--
+ExeStack:
+(new(a, 30);
+print(rH(a));)
+
+SymbolTable:
+ref(int) a = (0, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 18 ]]--
+ExeStack:
+(wH(b, 100);
+(new(a, 40);
+print(rH(a)););)
+
+SymbolTable:
+ref(int) a = (0, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+new(a, 50)
+(wH(b, 60);
+print(rH(a));)
+
+SymbolTable:
+ref(int) a = (0, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 17 ]]--
+ExeStack:
+new(a, 30)
+print(rH(a))
+
+SymbolTable:
+ref(int) a = (0, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 18 ]]--
+ExeStack:
+wH(b, 100)
+(new(a, 40);
+print(rH(a));)
+
+SymbolTable:
+ref(int) a = (0, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+
+FileTable:
+
+HeapTable:
+1 1
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+(wH(b, 60);
+print(rH(a));)
+
+SymbolTable:
+ref(int) a = (2, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+
+FileTable:
+
+HeapTable:
+1 100
+2 50
+3 30
+
+
+--[[ ProgramState ID: 17 ]]--
+ExeStack:
+print(rH(a))
+
+SymbolTable:
+ref(int) a = (3, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+
+FileTable:
+
+HeapTable:
+1 100
+2 50
+3 30
+
+
+--[[ ProgramState ID: 18 ]]--
+ExeStack:
+(new(a, 40);
+print(rH(a));)
+
+SymbolTable:
+ref(int) a = (0, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+
+FileTable:
+
+HeapTable:
+1 100
+2 50
+3 30
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+wH(b, 60)
+print(rH(a))
+
+SymbolTable:
+ref(int) a = (2, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+30
+
+FileTable:
+
+HeapTable:
+1 100
+2 50
+3 30
+
+
+--[[ ProgramState ID: 17 ]]--
+ExeStack:
+
+SymbolTable:
+ref(int) a = (3, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+30
+
+FileTable:
+
+HeapTable:
+1 100
+2 50
+3 30
+
+
+--[[ ProgramState ID: 18 ]]--
+ExeStack:
+new(a, 40)
+print(rH(a))
+
+SymbolTable:
+ref(int) a = (0, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+30
+
+FileTable:
+
+HeapTable:
+1 100
+2 50
+3 30
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+print(rH(a))
+
+SymbolTable:
+ref(int) a = (2, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+30
+
+FileTable:
+
+HeapTable:
+1 60
+2 50
+4 40
+
+
+--[[ ProgramState ID: 18 ]]--
+ExeStack:
+print(rH(a))
+
+SymbolTable:
+ref(int) a = (4, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+30
+
+FileTable:
+
+HeapTable:
+1 60
+2 50
+4 40
+
+
+--[[ ProgramState ID: 13 ]]--
+ExeStack:
+
+SymbolTable:
+ref(int) a = (2, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+30
+40
+50
+
+FileTable:
+
+HeapTable:
+1 60
+2 50
+4 40
+
+
+--[[ ProgramState ID: 18 ]]--
+ExeStack:
+
+SymbolTable:
+ref(int) a = (4, int)
+ref(int) b = (1, int)
+int v = 0
+
+Output:
+1
+30
+40
+50
+
+FileTable:
+
+HeapTable:
+1 60
+2 50
+4 40
+
+
+--[[ ProgramState ID: 4 ]]--
+ExeStack:
+string varf
+(int varc;
+(varf = "test.in";
+(OpenRFile: varf;
+(ReadFile: varc = varf;
+(print(varc);
+(ReadFile: varc = varf;
+(print(varc);
+CloseRFile: varf;););););););)
+
+SymbolTable:
+
+Output:
+
+FileTable:
+
+HeapTable:
+
+
+--[[ ProgramState ID: 4 ]]--
+ExeStack:
+(int varc;
+(varf = "test.in";
+(OpenRFile: varf;
+(ReadFile: varc = varf;
+(print(varc);
+(ReadFile: varc = varf;
+(print(varc);
+CloseRFile: varf;););););););)
+
+SymbolTable:
+string varf = ""
+
+Output:
+
+FileTable:
+
+HeapTable:
+
+
+--[[ ProgramState ID: 4 ]]--
+ExeStack:
+int varc
+(varf = "test.in";
+(OpenRFile: varf;
+(ReadFile: varc = varf;
+(print(varc);
+(ReadFile: varc = varf;
+(print(varc);
+CloseRFile: varf;);););););)
+
+SymbolTable:
+string varf = ""
+
+Output:
+
+FileTable:
+
+HeapTable:
+
+
+--[[ ProgramState ID: 4 ]]--
+ExeStack:
+(varf = "test.in";
+(OpenRFile: varf;
+(ReadFile: varc = varf;
+(print(varc);
+(ReadFile: varc = varf;
+(print(varc);
+CloseRFile: varf;);););););)
+
+SymbolTable:
+string varf = ""
+int varc = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+
+
+--[[ ProgramState ID: 4 ]]--
+ExeStack:
+varf = "test.in"
+(OpenRFile: varf;
+(ReadFile: varc = varf;
+(print(varc);
+(ReadFile: varc = varf;
+(print(varc);
+CloseRFile: varf;););););)
+
+SymbolTable:
+string varf = ""
+int varc = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+
+
+--[[ ProgramState ID: 4 ]]--
+ExeStack:
+(OpenRFile: varf;
+(ReadFile: varc = varf;
+(print(varc);
+(ReadFile: varc = varf;
+(print(varc);
+CloseRFile: varf;););););)
+
+SymbolTable:
+string varf = "test.in"
+int varc = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+
+
+--[[ ProgramState ID: 4 ]]--
+ExeStack:
+OpenRFile: varf
+(ReadFile: varc = varf;
+(print(varc);
+(ReadFile: varc = varf;
+(print(varc);
+CloseRFile: varf;);););)
+
+SymbolTable:
+string varf = "test.in"
+int varc = 0
+
+Output:
+
+FileTable:
+
+HeapTable:
+
+
+--[[ ProgramState ID: 4 ]]--
+ExeStack:
+(ReadFile: varc = varf;
+(print(varc);
+(ReadFile: varc = varf;
+(print(varc);
+CloseRFile: varf;);););)
+
+SymbolTable:
+string varf = "test.in"
+int varc = 0
+
+Output:
+
+FileTable:
+test.in
+
+HeapTable:
+
+
+--[[ ProgramState ID: 4 ]]--
+ExeStack:
+ReadFile: varc = varf
+(print(varc);
+(ReadFile: varc = varf;
+(print(varc);
+CloseRFile: varf;););)
+
+SymbolTable:
+string varf = "test.in"
+int varc = 0
+
+Output:
+
+FileTable:
+test.in
+
+HeapTable:
+
+
+--[[ ProgramState ID: 4 ]]--
+ExeStack:
+(print(varc);
+(ReadFile: varc = varf;
+(print(varc);
+CloseRFile: varf;););)
+
+SymbolTable:
+string varf = "test.in"
+int varc = 10
+
+Output:
+
+FileTable:
+test.in
+
+HeapTable:
+
+
+--[[ ProgramState ID: 4 ]]--
+ExeStack:
+print(varc)
+(ReadFile: varc = varf;
+(print(varc);
+CloseRFile: varf;);)
+
+SymbolTable:
+string varf = "test.in"
+int varc = 10
+
+Output:
+
+FileTable:
+test.in
+
+HeapTable:
+
+
+--[[ ProgramState ID: 4 ]]--
+ExeStack:
+(ReadFile: varc = varf;
+(print(varc);
+CloseRFile: varf;);)
+
+SymbolTable:
+string varf = "test.in"
+int varc = 10
+
+Output:
+10
+
+FileTable:
+test.in
+
+HeapTable:
+
+
+--[[ ProgramState ID: 4 ]]--
+ExeStack:
+ReadFile: varc = varf
+(print(varc);
+CloseRFile: varf;)
+
+SymbolTable:
+string varf = "test.in"
+int varc = 10
+
+Output:
+10
+
+FileTable:
+test.in
+
+HeapTable:
+
+
+--[[ ProgramState ID: 4 ]]--
+ExeStack:
+(print(varc);
+CloseRFile: varf;)
+
+SymbolTable:
+string varf = "test.in"
+int varc = 30
+
+Output:
+10
+
+FileTable:
+test.in
+
+HeapTable:
+
+
+--[[ ProgramState ID: 4 ]]--
+ExeStack:
+print(varc)
+CloseRFile: varf
+
+SymbolTable:
+string varf = "test.in"
+int varc = 30
+
+Output:
+10
+
+FileTable:
+test.in
+
+HeapTable:
+
+
+--[[ ProgramState ID: 4 ]]--
+ExeStack:
+CloseRFile: varf
+
+SymbolTable:
+string varf = "test.in"
+int varc = 30
+
+Output:
+10
+30
+
+FileTable:
+test.in
+
+HeapTable:
+
+
+--[[ ProgramState ID: 4 ]]--
+ExeStack:
+
+SymbolTable:
+string varf = "test.in"
+int varc = 30
+
+Output:
+10
+30
+
+FileTable:
+
+HeapTable:
+
+
